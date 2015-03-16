@@ -193,7 +193,8 @@ class blipfoto_importer_settings {
 								$statuses = array(
 									'draft'   => 'Draft',
 									'publish' => 'Published',
-									'pending' => 'Pending review'
+									'pending' => 'Pending review',
+									'private' => 'Private'
 									);
 
 								echo '<select name="' . $this->option() . '[post-status]">';
