@@ -123,7 +123,7 @@ class blipfoto_importer_main {
 									]
 									);
 
-// error_log( "Lumpy: entry " . print_r( $entry, true ) );
+error_log( "Lumpy: entry " . print_r( $entry, true ) );
 
 								if ( ! $title = $entry->data( 'entry.title' ) ) {
 									$title = 'Untitled';
