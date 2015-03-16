@@ -97,7 +97,7 @@ class blipfoto_importer_plugin {
 				),
 			'Api' => array(
 				'Client',
-				'Oauth',
+				'OAuth',
 				'Request',
 				'Response'
 				),
