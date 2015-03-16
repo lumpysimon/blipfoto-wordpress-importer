@@ -4,11 +4,11 @@ namespace Blipfoto\Api;
 
 use Blipfoto\Exceptions\ApiResponseException;
 use Blipfoto\Exceptions\OAuthException;
-use Blipfoto\Traits\Helper;
+//use Blipfoto\Traits\Helper;
 
 class Client {
 
-	use Helper;
+	//use Helper;
 
 	protected $id;
 	protected $secret;
@@ -76,7 +76,7 @@ class Client {
 	 * @throws OAuthException|ApiResponseException
 	 */
 	protected function request($method, $args) {
-		$request = new Request($this, $method, $args[0], count($args) > 1 ? $args[1] : []);
+		$request = new Request($this, $method, $args[0], count($args) > 1 ? $args[1] : array());
 		$response = $request->send();
 		$error = $response->error();
 		if ($error !== null) {
@@ -115,6 +115,13 @@ class Client {
 	 */
 	public function delete() {
 		return $this->request('DELETE', func_get_args());
+	}
+	
+	private function getset($property, $args) {
+		if (count($args)) {
+			$this->$property = $args[0];
+		}
+		return $this->$property;
 	}
 
 }

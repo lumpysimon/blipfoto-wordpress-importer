@@ -3,7 +3,7 @@
 Plugin Name: Blipfoto Importer
 Plugin URI:  https://wordpress.org/blipfoto-importer
 Description: Import entries from a Blipfoto journal into your WordPress website
-Version:     1.0
+Version:     1.1
 Author:      Simon Blackbourn
 Author URI:  http://simonblackbourn.net
 License:     GPL2
@@ -85,10 +85,7 @@ class blipfoto_importer_plugin {
 		}
 
 		$files = array(
-			'Traits' => array(
-				'Helper'
-				),
-			'Exceptions' => array(
+				'Exceptions' => array(
 				'BaseException',
 				'ApiResponseException',
 				'InvalidResponseException',

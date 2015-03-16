@@ -3,11 +3,11 @@
 namespace Blipfoto\Api;
 
 use Blipfoto\Exceptions\InvalidResponseException;
-use Blipfoto\Traits\Helper;
+//use Blipfoto\Traits\Helper;
 
 class Response {
 
-	use Helper;
+	//use Helper;
 
 	protected $body;
 	protected $http_status;
@@ -21,7 +21,7 @@ class Response {
 	 * @param array $rate_limit (optional)
 	 * @throws InvalidResponseException
 	 */
-	public function __construct($raw_body, $http_status = 200, $rate_limit = []) {
+	public function __construct($raw_body, $http_status = 200, $rate_limit = array()) {
 
 		// check status
 		if ($http_status != 200) {
@@ -85,6 +85,13 @@ class Response {
 	 */
 	public function rateLimit($key = null) {
 		return $key ? (isset($this->rate_limit[$key]) ? $this->rate_limit[$key] : null) : $this->rate_limit;
+	}
+	
+	private function getset($property, $args) {
+		if (count($args)) {
+			$this->$property = $args[0];
+		}
+		return $this->$property;
 	}
 
 }

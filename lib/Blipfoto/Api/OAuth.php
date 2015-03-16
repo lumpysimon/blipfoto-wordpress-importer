@@ -38,20 +38,20 @@ class OAuth {
 
 		$state = sha1(mt_rand());
 
-		$_SESSION[$this->oauth_key] = [
+		$_SESSION[$this->oauth_key] = array(
 			'redirect_uri'	=> $redirect_uri,
 			'scope'			=> $scope,
 			'state'			=> $state,
-		];
+		);
 
-		$url = $this->authorize_uri . '?' . http_build_query([
+		$url = $this->authorize_uri . '?' . http_build_query(array(
 			'response_type'	=> 'code',
 			'client_id'		=> $this->client->id(),
 			'client_secret' => $this->client->secret(),
 			'redirect_uri'	=> $redirect_uri,
 			'scope'			=> $scope,
 			'state'			=> $state,
-		]);
+		));
 		header('Location: ' . $url);
 		exit;
 	}
@@ -88,13 +88,13 @@ class OAuth {
 		$params = $_SESSION[$this->oauth_key];
 		unset($_SESSION[$this->oauth_key]);
 
-		$response = $this->client->post('oauth/token', [
+		$response = $this->client->post('oauth/token', array(
 			'client_id'		=> $this->client->id(),
 			'grant_type'	=> 'authorization_code',
 			'code'			=> $authorization_code,
 			'scope'			=> $params['scope'],
 			'redirect_uri'	=> $params['redirect_uri'],
-		]);
+		));
 		return $response->data('token');
 	}
 

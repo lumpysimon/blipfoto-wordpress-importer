@@ -5,11 +5,11 @@ namespace Blipfoto\Api;
 use Blipfoto\Api\Client;
 use Blipfoto\Api\Response;
 use Blipfoto\Exceptions\NetworkException;
-use Blipfoto\Traits\Helper;
+//use Blipfoto\Traits\Helper;
 
 class Request {
 
-	use Helper;
+//	use Helper;
 
 	protected $client;
 	protected $method;
@@ -32,7 +32,7 @@ class Request {
 		$this->method($method);
 		$this->resource($resource);
 		$this->params($params);
-		$this->headers = [];
+		$this->headers = array();
 	}
 
 	/**
@@ -118,7 +118,7 @@ class Request {
 		curl_setopt($this->curl, CURLOPT_SSL_VERIFYPEER, false);
 
 		// Capture rate limit response headers.
-		$rate_limit = [];
+		$rate_limit = array();
 		curl_setopt($this->curl, CURLOPT_HEADERFUNCTION, function ($curl, $header) use (&$rate_limit) {
 			$parts = explode(':', trim($header), 2);
 			if (isset($parts[1]) && preg_match('/^X-RateLimit-(.*)/', $parts[0], $match)) {
@@ -136,7 +136,7 @@ class Request {
 		}
 
 		// Add headers.
-		$headers = [];
+		$headers = array();
 		foreach ($this->headers as $name => $value) {
 			if ($value !== null) {
 				$headers[] = $name . ': ' . $value;
@@ -166,6 +166,13 @@ class Request {
 	 **/
 	protected function setBearerToken($token) {
 		$this->header('Authorization', 'Bearer ' . $token);
+	}
+	
+	private function getset($property, $args) {
+		if (count($args)) {
+			$this->$property = $args[0];
+		}
+		return $this->$property;
 	}
 
 }
