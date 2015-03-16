@@ -32,7 +32,7 @@ Please also note that there appears to be no way to retrieve original high resol
 
 ## To do
 
-* Parse the text and format it nicely (markdown-style links etc.)
+See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues)
 
 ## Changelog
 
