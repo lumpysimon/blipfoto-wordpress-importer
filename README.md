@@ -30,6 +30,10 @@ Please also note that there appears to be no way to retrieve original high resol
 12. To run the import, go to the 'Blipfoto Importer' page in the 'Tools' menu. The import is run in batches to prevent timeouts or exceeding the Blipfoto API rate limit. Just keep hitting the 'Go!' button until all your entries have been imported.
 13. If you hit the Blipfoto API rate limit (about 500 entries), put your feet up with a nice cup of tea and try again in about 15 minutes.
 
+## To do
+
+* Parse the text and format it nicely (markdown-style links etc.)
+
 ## Changelog
 
 ### 1.1.2 (16th March 2015)
