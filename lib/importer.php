@@ -49,9 +49,9 @@ class blipfoto_importer_main {
 
 			$response = $client->get(
 				'user/profile',
-				[
+				array(
 					'return_details' => 1
-				]
+					)
 				);
 
 			if ( $response->error ) {
@@ -76,10 +76,10 @@ class blipfoto_importer_main {
 
 							$journal = $client->get(
 								'entries/journal',
-								[
+								array(
 									'page_size'  => $page_size,
 									'page_index' => $page
-								]
+									)
 								);
 
 							$entries = $journal->data( 'entries' );
@@ -116,11 +116,11 @@ class blipfoto_importer_main {
 
 								$entry = $client->get(
 									'entry',
-									[
+									array(
 										'entry_id'          => $item,
 										'return_details'    => 1,
 										'return_image_urls' => 1
-									]
+										)
 									);
 
 								if ( ! $title = $entry->data( 'entry.title' ) ) {
