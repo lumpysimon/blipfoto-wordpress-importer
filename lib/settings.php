@@ -97,6 +97,7 @@ class blipfoto_importer_settings {
 			'access-token'  => '',
 			'post-type'     => 'post',
 			'post-status'   => 'draft',
+			'auto-insert'   => 0,
 			'num-entries'   => 25
 			);
 
@@ -205,6 +206,14 @@ class blipfoto_importer_settings {
 
 								?>
 								<p class="description">The status for imported entries.</p>
+							</td>
+						</tr>
+
+						<tr valign="top">
+							<th scope="row">Auto-insert</th>
+							<td>
+								<input name="<?php echo $this->option(); ?>[auto-insert]" type="checkbox" value="1" <?php checked( $opts['auto-insert'] ); ?>">
+								<p class="description">Each image is automatically set to be the post's 'featured image'. If you tick this option, the image will also be inserted at the beginning of the post content. You probably don't want to tick this if your theme automatically displays featured images.</p>
 							</td>
 						</tr>
 
