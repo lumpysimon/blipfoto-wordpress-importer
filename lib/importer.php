@@ -65,7 +65,7 @@ class blipfoto_importer_main {
 
 					echo '<p>You have ' . $total_entries . ' entries.</p>';
 
-					if ( isset( $_GET[ 'blipfoto-import-go' ] ) and wp_verify_nonce( $_GET[ 'blipfoto_importer_nonce' ], 'blipfoto-importer-nonce' ) ) {
+					if ( isset( $_POST[ 'blipfoto-import-go' ] ) and wp_verify_nonce( $_POST[ 'blipfoto_importer_nonce' ], 'blipfoto-importer-nonce' ) ) {
 
 						$fetch        = min( $page_size, $total_entries );
 						$num_to_fetch = 0;
@@ -173,8 +173,7 @@ class blipfoto_importer_main {
 					?>
 
 					<p>Click to import <?php echo $page_size; ?> entries...</p>
-					<form method="get" action="<?php echo admin_url( 'tools.php' ); ?>">
-						<input type="hidden" name="page" value="blipfoto-import">
+					<form method="post" action="<?php echo admin_url( 'tools.php?page=blipfoto-import' ); ?>">
 						<?php wp_nonce_field( 'blipfoto-importer-nonce', 'blipfoto_importer_nonce' ); ?>
 						<input class="button-primary" type="submit" name="blipfoto-import-go" value="Go!">
 					</form>
