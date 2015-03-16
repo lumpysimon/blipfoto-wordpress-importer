@@ -138,7 +138,7 @@ class blipfoto_importer_settings {
 				<li>Enter the URL of your website (most likely <em><?php echo home_url(); ?></em>) in the <em>Website</em> field.</li>
 				<li>The <em>Redirect URI</em> field should be left blank.</li>
 				<li>Click <em>Create new app</em>.</li>
-				<li>You will now be shown your <em>client ID</em>, <em>client secret</em> and <em>access token</em>. Copy and paste these into the fields below and click <em>Save settings</em>.</li>
+				<li>You will now be shown your <em>client ID</em>, <em>client secret</em> and <em>access token</em>. Copy and paste these into the fields below, set the other settings as required and click <em>Save settings</em>.</li>
 				<li>When you're done, you can <a href="<?php echo admin_url( 'tools.php?page=blipfoto-import' ); ?>">run the importer</a>.</li>
 			</ol>
 
