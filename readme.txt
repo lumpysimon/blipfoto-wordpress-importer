@@ -5,7 +5,7 @@ Requires at least: 4.1
 Tested up to: 4.1.1
 Stable tag: trunk
 
-A WordPress plugin to import journal entries and photos from a [Blipfoto](https://www.polaroidblipfoto.com) daily photo journal into your WordPress website.
+Import journal entries and photos from a Blipfoto daily photo journal into your WordPress website.
 
 == Description ==
 
@@ -35,13 +35,13 @@ This is not an official Blipfoto plugin, it is developed and maintained by me in
 
 Feedback, feature requests and bug reports are all very welcome (please use the [support forum](https://wordpress.org/support/plugin/blipfoto-importer) or the [GitHub issues page](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
 
-= Known bugs and future plans =
-
-See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
-
 I would strongly advise that you make a back up of your database before using this plugin.
 
 There appears to be no way to retrieve original high resolution images from Blipfoto, so this plugin retrieves the 'standard' size image instead. This is still good enough for display on most websites, but it is not your original full size image that you uploaded to Blipfoto.
+
+= Known bugs and future plans =
+
+See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
 
 == Installation ==
 
