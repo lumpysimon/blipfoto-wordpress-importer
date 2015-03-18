@@ -8,6 +8,8 @@ Blipfoto Importer lets you easily import all your photos and journal entries fro
 
 ## Important notes
 
+**This plugin is now available from the [WordPress plugin repository](https://wordpress.org/plugins/blipfoto-importer/).** I recommend you install from there via the 'Add new plugin' page of your WordPress website.
+
 This plugin was initially written extremely quickly in response to uncertainty over the future of the Blipfoto website. Please treat it as very much a 'beta' product.
 
 Feedback, feature requests and bug reports are all very welcome (please use the [support forum](https://wordpress.org/support/plugin/blipfoto-importer) or the [GitHub issues page](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues)).
