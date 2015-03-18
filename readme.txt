@@ -14,6 +14,7 @@ A WordPress plugin to import journal entries and photos from a [Blipfoto](https:
 Blipfoto Importer lets you easily import all your photos and journal entries from Blipfoto into your WordPress website. Each imported entry will create a post on your website, with the image set to be the 'featured image'. You can choose the post status (published, draft, private, or pending review) and if you wish automatically insert the image into the post content.
 
 = Instructions =
+
 1. Go to the 'Blipfoto Importer' settings page (under the Settings menu).
 2. In a new tab or window, go to the [Blipfoto apps page](https://www.polaroidblipfoto.com/developer/apps)
 3. Click the 'Create a new app' button.
@@ -28,6 +29,20 @@ Blipfoto Importer lets you easily import all your photos and journal entries fro
 12. To run the import, go to the 'Blipfoto Importer' page in the 'Tools' menu. The import is run in batches to prevent timeouts or exceeding the Blipfoto API rate limit. Just keep hitting the 'Go!' button until all your entries have been imported.
 13. If you hit the Blipfoto API rate limit (about 500 entries), put your feet up with a nice cup of tea and try again in about 15 minutes.
 
+= Important notes =
+
+This is not an official Blipfoto plugin, it is developed and maintained by me in my spare time. I initially wrote it extremely quickly in response to uncertainty over the future of the Blipfoto website. Please treat it as very much a 'beta' product.
+
+Feedback, feature requests and bug reports are all very welcome (please use the [support forum](https://wordpress.org/support/plugin/blipfoto-importer) or the [GitHub issues page](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
+
+= Known bugs and future plans =
+
+See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
+
+I would strongly advise that you make a back up of your database before using this plugin.
+
+There appears to be no way to retrieve original high resolution images from Blipfoto, so this plugin retrieves the 'standard' size image instead. This is still good enough for display on most websites, but it is not your original full size image that you uploaded to Blipfoto.
+
 == Installation ==
 
 1. Search for 'blipfoto importer' from the 'Add new plugin' page in your WordPress website.
@@ -35,6 +50,9 @@ Blipfoto Importer lets you easily import all your photos and journal entries fro
 3. Follow the instructions on the [main plugin page](https://wordpress.org/plugins/blipfoto-importer)
 
 == Changelog ==
+
+= 1.1.3 = (18th March 2015)
+* More readme changes
 
 = 1.1.2 = (16th March 2015)
 * Improved instructions

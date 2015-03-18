@@ -8,11 +8,13 @@ Blipfoto Importer lets you easily import all your photos and journal entries fro
 
 ## Important notes
 
-This plugin was written extremely quickly in response to the possible (but as yet unconfirmed) demise of the Blipfoto website. Please treat it as a 'beta' product. All feedback, feature requests and bug reports are welcome (please use the [GitHub issues page](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues) or report via [my website](https://lumpylemon.co.uk)).
+This plugin was initially written extremely quickly in response to uncertainty over the future of the Blipfoto website. Please treat it as very much a 'beta' product.
 
-Please back up your database before using this plugin!
+Feedback, feature requests and bug reports are all very welcome (please use the [support forum](https://wordpress.org/support/plugin/blipfoto-importer) or the [GitHub issues page](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues)).
 
-Please also note that there appears to be no way to retrieve original high resolution images from Blipfoto, so this plugin retrieves the 'standard' size image instead. This is still good enough for display on most websites, but it is not your original full size image that you uploaded to Blipfoto.
+I would strongly advise that you make a back up of your database before using this plugin.
+
+There appears to be no way to retrieve original high resolution images from Blipfoto, so this plugin retrieves the 'standard' size image instead. This is still good enough for display on most websites, but it is not your original full size image that you uploaded to Blipfoto.
 
 ## Instructions
 
@@ -30,11 +32,15 @@ Please also note that there appears to be no way to retrieve original high resol
 12. To run the import, go to the 'Blipfoto Importer' page in the 'Tools' menu. The import is run in batches to prevent timeouts or exceeding the Blipfoto API rate limit. Just keep hitting the 'Go!' button until all your entries have been imported.
 13. If you hit the Blipfoto API rate limit (about 500 entries), put your feet up with a nice cup of tea and try again in about 15 minutes.
 
-## To do
+## Known bugs and future plans
 
-See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues)
+See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
 
 ## Changelog
+
+### 1.1.3 (18th March 2015)
+
+* More readme changes
 
 ### 1.1.2 (16th March 2015)
 
