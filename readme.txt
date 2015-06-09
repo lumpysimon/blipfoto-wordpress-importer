@@ -2,7 +2,7 @@
 Contributors: lumpysimon
 Tags: blipfoto, blipfoto.com, polaroid, polaroidblipfoto.com, journal, photography, import
 Requires at least: 4.1
-Tested up to: 4.1.1
+Tested up to: 4.2.2
 Stable tag: trunk
 
 Import journal entries and photos from a Blipfoto daily photo journal into your WordPress website.
@@ -50,6 +50,11 @@ See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importe
 3. Follow the instructions on the [main plugin page](https://wordpress.org/plugins/blipfoto-importer)
 
 == Changelog ==
+
+= 1.2 = (9th June 2015)
+* Fix post date bug
+* Set image title to match the entry title
+* Tested with WordPress 4.2.2
 
 = 1.1.3 = (18th March 2015)
 * More readme changes

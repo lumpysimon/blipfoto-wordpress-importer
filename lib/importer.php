@@ -129,24 +129,27 @@ class blipfoto_importer_main {
 
 								$content = $entry->data( 'details.description' );
 								$img_url = $entry->data( 'image_urls.stdres' );
+								$date    = $entry->data( 'entry.date' ) . ' 00:00:00';
 
 								$post_data = array(
-									'post_type'    => blipfoto_importer::option( 'post-type' ),
-									'post_status'  => blipfoto_importer::option( 'post-status' ),
-									'post_date'    => $entry->data( 'entry.date' ) . ' 00:00:00',
-									'post_title'   => $title,
-									'post_content' => $content
+									'post_type'     => blipfoto_importer::option( 'post-type' ),
+									'post_status'   => blipfoto_importer::option( 'post-status' ),
+									'post_date'     => $date,
+									'post_date_gmt' => get_gmt_from_date( $date ),
+									'post_title'    => $title,
+									'post_content'  => $content
 									);
 
 								if ( $id = wp_insert_post( $post_data ) ) {
 
 									add_action( 'add_attachment', array( $this, 'set_featured_image' ) );
-									 media_sideload_image( $img_url, $id );
-									 remove_action( 'add_attachment', array( $this, 'set_featured_image' ) );
+									media_sideload_image( $img_url, $id, $title );
+									remove_action( 'add_attachment', array( $this, 'set_featured_image' ) );
 
 									if ( blipfoto_importer::option( 'auto-insert' ) ) {
 
 										$img_id = get_post_thumbnail_id( $id );
+
 										$content = '<img class="aligncenter size-full wp-image-' . $img_id . '" src="' . $img_url . '" alt="' . esc_attr( $title ) . '" />' . $content;
 										$update_data = array(
 											'ID'           => $id,

@@ -6,7 +6,7 @@ class blipfoto_importer {
 
 
 
-	public static $version = 1.0;
+	public static $version = 1.2;
 
 
 
