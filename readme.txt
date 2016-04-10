@@ -1,22 +1,22 @@
 === Blipfoto importer ===
 Contributors: lumpysimon
-Tags: blipfoto, blipfoto.com, polaroid, polaroidblipfoto.com, journal, photography, import
+Tags: blipfoto, blipfoto.com, journal, photography, import
 Requires at least: 4.1
-Tested up to: 4.2.2
+Tested up to: 4.5
 Stable tag: trunk
 
 Import journal entries and photos from a Blipfoto daily photo journal into your WordPress website.
 
 == Description ==
 
-[Blipfoto](https://www.polaroidblipfoto.com) is an online daily photo journal. Each day you can upload one photo and add some words. It is also an extremely friendly community where people comment on and rate each other's photos, choose favourite 'blips' (the informal name given to journal entries), follow journals, join groups and take part in discussions.
+[Blipfoto](https://www.blipfoto.com) is an online daily photo journal. Each day you can upload one photo and add some words. It is also an extremely friendly community where people comment on and rate each other's photos, choose favourite 'blips' (the informal name given to journal entries), follow journals, join groups and take part in discussions.
 
 Blipfoto Importer lets you easily import all your photos and journal entries from Blipfoto into your WordPress website. Each imported entry will create a post on your website, with the image set to be the 'featured image'. You can choose the post status (published, draft, private, or pending review) and if you wish automatically insert the image into the post content.
 
 = Instructions =
 
 1. Go to the 'Blipfoto Importer' settings page (under the Settings menu).
-2. In a new tab or window, go to the [Blipfoto apps page](https://www.polaroidblipfoto.com/developer/apps)
+2. In a new tab or window, go to the [Blipfoto apps page](https://www.blipfoto.com/developer/apps)
 3. Click the 'Create a new app' button.
 4. Enter your name.
 5. Choose 'web application'.
@@ -50,6 +50,11 @@ See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importe
 3. Follow the instructions on the [main plugin page](https://wordpress.org/plugins/blipfoto-importer)
 
 == Changelog ==
+
+= 1.3 = (10th April 2016)
+* Remove all mention of Polaroid
+* Change h2 to h1 (for improved accessibility)
+* Tested with WordPress 4.5
 
 = 1.2 = (9th June 2015)
 * Fix post date bug

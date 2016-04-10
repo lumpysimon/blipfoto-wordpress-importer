@@ -16,15 +16,15 @@ class Client {
 	protected $instance;
 
 	// Endpoint constants
-	const URI_API_ENDPOINT 		= 'https://api.polaroidblipfoto.com/4/';
-	const URI_AUTHORIZE 		= 'https://www.polaroidblipfoto.com/oauth/authorize/';
+	const URI_API_ENDPOINT 		= 'https://api.blipfoto.com/4/';
+	const URI_AUTHORIZE 		= 'https://www.blipfoto.com/oauth/authorize/';
 
 	// scope constants
 	const SCOPE_READ 			= 'read';
 	const SCOPE_READ_WRITE		= 'read,write';
 
 	// misc constants
-	const SESSION_PREFIX 		= 'polaroidblipfoto_';
+	const SESSION_PREFIX 		= 'blipfoto_';
 
 	/**
 	 * Create new Client instance.
@@ -116,7 +116,7 @@ class Client {
 	public function delete() {
 		return $this->request('DELETE', func_get_args());
 	}
-	
+
 	private function getset($property, $args) {
 		if (count($args)) {
 			$this->$property = $args[0];

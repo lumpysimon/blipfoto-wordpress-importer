@@ -7,6 +7,7 @@ defined( 'ABSPATH' ) or die();
 
 
 global $blipfoto_importer_settings;
+
 $blipfoto_importer_settings = new blipfoto_importer_settings;
 
 
@@ -21,8 +22,8 @@ class blipfoto_importer_settings {
 
 	function __construct() {
 
-		add_action( 'admin_init',   array( $this, 'init' ) );
-		add_action( 'admin_menu',   array( $this, 'add_page' ) );
+		add_action( 'admin_init', array( $this, 'init' ) );
+		add_action( 'admin_menu', array( $this, 'add_page' ) );
 
 	}
 
@@ -127,12 +128,12 @@ class blipfoto_importer_settings {
 
 		<div class="wrap">
 
-			<h2>Blipfoto Importer Settings</h2>
+			<h1>Blipfoto Importer Settings</h1>
 
 			<h3>How to grant access to your Blipfoto account</h3>
 			<ol>
-				<li>Go to your <a href="https://polaroidblipfoto.com/settings/profile" target="_blank">Blipfoto profile page</a> to find out your username, and enter it in the <em>username</em> field below.</li>
-				<li>Go to the <a href="https://www.polaroidblipfoto.com/developer/apps" target="_blank">Blipfoto apps page</a> and click the <em>Create a new app</em> button.</li>
+				<li>Go to your <a href="https://www.blipfoto.com/settings/profile" target="_blank">Blipfoto profile page</a> to find out your username, and enter it in the <em>username</em> field below.</li>
+				<li>Go to the <a href="https://www.blipfoto.com/developer/apps" target="_blank">Blipfoto apps page</a> and click the <em>Create a new app</em> button.</li>
 				<li>Give it any name you wish (e.g. <em>My website</em>).</li>
 				<li>Make sure <em>Type</em> is set to <em>Web application</em>.</li>
 				<li>Enter the URL of your website (most likely <em><?php echo home_url(); ?></em>) in the <em>Website</em> field.</li>

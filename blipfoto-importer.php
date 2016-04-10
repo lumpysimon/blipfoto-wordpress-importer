@@ -3,7 +3,7 @@
 Plugin Name: Blipfoto Importer
 Plugin URI:  https://wordpress.org/blipfoto-importer
 Description: Import entries from a Blipfoto journal into your WordPress website
-Version:     1.2
+Version:     1.3
 Author:      Simon Blackbourn
 Author URI:  http://simonblackbourn.net
 License:     GPL2
@@ -14,7 +14,7 @@ License:     GPL2
 	What it does
 	------------
 
-	Blipfoto (https://www.polaroidblipfoto.com) is an online daily photo journal. Each day you can upload one photo and add some words. It is also a very friendly community where you can comment on and rate other people's photos.
+	Blipfoto (https://www.blipfoto.com) is an online daily photo journal. Each day you can upload one photo and add some words. It is also a very friendly community where you can comment on and rate other people's photos.
 
 	Blipfoto Importer lets you easily import all your photos and journal entries from Blipfoto into your WordPress website.
 
@@ -25,11 +25,12 @@ License:     GPL2
 	-----
 
 	This plugin is not an official Blipfoto product.
-	I have written it as a result of concerns about the future of the Blipfoto website, as a way for people to retrieve all their text and photos and safely store them on their own WordPress website.
+	I originally wrote it at a time when there were concerns about the future of the Blipfoto website, as a way for people to retrieve all their text and photos and safely store them on their own WordPress website. Blipfoto is now fully owned and run by its users (woo hoo!), so hopefully those concerns are no longer valid, but this plugin is still a very useful tool for anyone who wants to mirror their Blipfoto journal to their WordPress website.
 
 	http://simonblackbourn.net
-	https://twitter.com/lumpysimon
-	https://www.polaroidblipfoto.com/lumpysimon
+	https://www.twitter.com/lumpysimon
+	https://www.blipfoto.com/lumpysimon
+
 
 
 	-------

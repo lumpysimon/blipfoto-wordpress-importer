@@ -1,6 +1,6 @@
 # Blipfoto importer
 
-A WordPress plugin to import journal entries and photos from [Blipfoto](https://www.polaroidblipfoto.com) into a WordPress website.
+A WordPress plugin to import journal entries and photos from [Blipfoto](https://www.blipfoto.com) into a WordPress website.
 
 Blipfoto is an online daily photo journal. Each day you can upload one photo and add some words. It is also an extremely friendly community where people comment on and rate each other's photos, choose favourite 'blips' (the informal name given to journal entries), follow journals, join groups and take part in discussions.
 
@@ -8,18 +8,20 @@ Blipfoto Importer lets you easily import all your photos and journal entries fro
 
 ## Important notes
 
-This plugin was initially written extremely quickly in response to uncertainty over the future of the Blipfoto website. Please treat it as very much a 'beta' product.
+This plugin was initially written extremely quickly in response to uncertainty over the future of the Blipfoto website. Blipfoto is now fully owned and run by its users (woo hoo!), so hopefully those concerns are no longer valid, but this plugin is still a very useful tool for anyone who wants to mirror their Blipfoto journal to their WordPress website.
+
+Please treat it as very much a 'beta' product.
 
 Feedback, feature requests and bug reports are all very welcome (please use the [support forum](https://wordpress.org/support/plugin/blipfoto-importer) or the [GitHub issues page](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues)).
 
-I would strongly advise that you make a back up of your database before using this plugin.
+I would strongly advise that you make a back up of your website database before using this plugin.
 
 There appears to be no way to retrieve original high resolution images from Blipfoto, so this plugin retrieves the 'standard' size image instead. This is still good enough for display on most websites, but it is not your original full size image that you uploaded to Blipfoto.
 
 ## Instructions
 
 1. Go to the 'Blipfoto Importer' settings page (under the Settings menu).
-2. In a new tab or window, go to the [Blipfoto apps page](https://www.polaroidblipfoto.com/developer/apps)
+2. In a new tab or window, go to the [Blipfoto apps page](https://www.blipfoto.com/developer/apps)
 3. Click the 'Create a new app' button.
 4. Enter your name.
 5. Choose 'web application'.
@@ -37,6 +39,12 @@ There appears to be no way to retrieve original high resolution images from Blip
 See the [GitHub issues](https://github.com/lumpysimon/blipfoto-wordpress-importer/issues).
 
 ## Changelog
+
+### 1.3 (10th April 2016)
+
+* Remove all mention of Polaroid
+* Change h2 to h1 (for improved accessibility)
+* Tested with WordPress 4.5
 
 ### 1.2 (9th June 2015)
 
